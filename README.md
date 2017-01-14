@@ -15,10 +15,10 @@ composer require b3n/typo3-predis-cache
 ## Usage
 #####Example singe server configuration
 ```php
-return array(
-   'SYS' => array(
-      'caching' => array(
-         'cache_pages' => array(
+return [
+   'SYS' => [
+      'caching' => [
+         'cache_pages' => [
             'backend' => \B3N\TYPO3\Cache\Backend\RedisBackend::class,
             'options' => [
                 'defaultLifetime' => 0,
@@ -29,18 +29,18 @@ return array(
                     ],
                 ],
             ],
-         ),
-      ),
-   ),
-);
+         ],
+      ],
+   ],
+];
 ```
 
 #####Example configuration with replication
 ```php
-return array(
-   'SYS' => array(
-      'caching' => array(
-         'cache_pages' => array(
+return [
+   'SYS' => [
+      'caching' => [
+         'cache_pages' => [
             'backend' => \B3N\TYPO3\Cache\Backend\RedisBackend::class,
             'options' => [
                 'defaultLifetime' => 0,
@@ -54,11 +54,11 @@ return array(
                     ],
                 ],
             ],
-         ),
-      ),
-   ),
-);
+         ],
+      ],
+   ],
+];
 ```
 
-You can pass every setting like you would except when you use predis directly. 
+You can pass every setting like you would when you use predis directly. 
 For more information please have a look here: https://github.com/nrk/predis#how-to-install-and-use-predis
