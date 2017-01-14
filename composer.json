@@ -1,0 +1,26 @@
+{
+    "name": "b3n/typo3-predis-cache",
+    "description": "TYPO3 backend cache based on predis",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "cache",
+        "redis"
+    ],
+    "type": "typo3-cms-extension",
+    "require": {
+        "predis/predis": "^1.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Benjamin Hirsch",
+            "email": "mail@benjaminhirsch.net"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "B3N\\TYPO3\\Cache\\": "src"
+        }
+    }
+}
