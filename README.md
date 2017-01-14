@@ -13,7 +13,7 @@ composer require b3n/typo3-predis-cache
 ```
 
 ## Usage
-#####Example singe server configuration
+#####Example single server configuration
 ```php
 return [
    'SYS' => [
